@@ -1,2 +1,4 @@
-# jupyter_tutorials
-Setup python, jupyter, jupyter server on remote machine, etc
+# Jupyter Notebooks Tutorial
+## Install Anaconda
+## Start a jupyter notebook
+## Notebook server on local network
