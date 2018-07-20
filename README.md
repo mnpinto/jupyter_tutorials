@@ -7,6 +7,7 @@ With Anaconda Jupyter is installed by default. Now you can open the terminal (or
 jupyter notebook
 ```
 A jupyter notebook will be created and the browser will open by default. Notice the link should look link `localhost:8888`. This means the notebook is running in your local machine in port 8888.
+
 **Start a notebook in specific directory:**
 To set the home folder for the current notebook you can pass the argument the `--notebook-dir=some_path` argument to set the home folder to ´some_path´. To set for the current folder use a dot in the path.
 ```bash
