@@ -14,7 +14,7 @@ To set the home folder for the current notebook you can pass the argument the `-
 jupyter notebook --notebook-dir=~/my_notebooks #set the notebook home folder to my_notebooks folder in home (if you are in linux)
 jupyter notebook --notebook-dir=. #set the notebook home folder to the current directory.
 ```
-## Notebook server on local network
+## Notebook server on remote host
 **Find your public ip address**
 ```bash
 curl ipinfo.io/ip
@@ -23,7 +23,7 @@ curl ipinfo.io/ip
 ```bash
 hostname -I
 ```
-### Add new trusted machine
+### Add new trusted machine (Linux)
 Generate a pair of ssh keys in your local host with the following command:
 ```bash
 ssh-keygen
