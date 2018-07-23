@@ -15,3 +15,22 @@ jupyter notebook --notebook-dir=~/my_notebooks #set the notebook home folder to 
 jupyter notebook --notebook-dir=. #set the notebook home folder to the current directory.
 ```
 ## Notebook server on local network
+**Find your public ip address**
+```bash
+curl ipinfo.io/ip
+```
+**Find your internal network address**
+```bash
+hostname -I
+```
+### Add new trusted machine
+Generate a pair of ssh keys in your local host with the following command:
+```bash
+ssh-keygen
+```
+This will generate to files inside `~/.ssh`, by defaut:
+```bash
+id_rsa
+id_rsa.pub
+```
+The `id_rsa` is the private key and should never be shared. The `id_rsa.pub` has the public key. To gain acess to the remote host add the public key to the `~/.ssh/authorized_keys` file if it exists or create it otherwise. If you are on the local network you can access it using the local address. If you need to access with the public ip address you need to make a forward in the router for an ssh connection for your remote host.
