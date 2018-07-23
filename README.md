@@ -34,3 +34,13 @@ id_rsa
 id_rsa.pub
 ```
 The `id_rsa` is the private key and should never be shared. The `id_rsa.pub` has the public key. To gain acess to the remote host add the public key to the `~/.ssh/authorized_keys` file if it exists or create it otherwise. If you are on the local network you can access it using the local address. If you need to access with the public ip address you need to make a forward in the router for an ssh connection for your remote host.
+
+### Add new trusted machine (Windows)
+* Go to https://www.putty.org/ and install PuTTY. After the installation is complete type `windows key + R` and write `PuTTYgen`.
+* Choose the option to generate and then save both public and private keys in a safe place. 
+* Copy the public key as in the Linux case to your remote host.
+* Open PuTTY and go to `Connection` > `SSH` > `Auth` and browse the private key location.
+* Go back to `Session` in PuTTY and type the ip of the remote host. You should now be able to connect.
+
+### Add new trusted machine (Android)
+* Install JuiceSSH App
