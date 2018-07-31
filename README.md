@@ -44,3 +44,14 @@ The `id_rsa` is the private key and should never be shared. The `id_rsa.pub` has
 
 ### Add new trusted machine (Android)
 * Install JuiceSSH App
+
+## Remote access to Jupyter notebook via SSH
+(https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh)
+* Start jupyter notebook on the remote host
+```bash
+jupyter notebook --no-browser --port=9999 
+```
+* Create a SSH tunnel on localhost
+```bash
+ssh -N -L localhost:9999:localhost:9999 remote_user@remote_host
+```
