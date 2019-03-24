@@ -18,7 +18,7 @@ Next, install packages:
 ```
  ### Step 3 - Configure jupyter notebook kernel
 ```bash
-conda install ipykernel
+conda install jupyter ipykernel
 python -m ipykernel install --user --name geo --display-name "Python (geo)"
 ```
 Then you can start a jupyter notebook and create a new notebook with the kernel "Python (geo)". 
