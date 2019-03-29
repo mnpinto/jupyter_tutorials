@@ -4,7 +4,7 @@ This was tested on ubuntu 18.04 LTS following https://automating-gis-processes.g
 ### Step 1 - Create the conda environment
 I'm naming it as **geo**:
 ```bash
- conda create -n geo python anaconda
+ conda create -n geo python
  ```
  
  ### Step 2 - Install packages
